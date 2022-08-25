@@ -18,15 +18,15 @@ function validate() {
     }
 }
 
- function validateEmail(){
-     var emialId = document.myForm.email.value;
-     atpos = emialId.indexOf("@");
-     dotpos = emialId.lastIndexOf(".");
+function validateEmail() {
+    var emialId = document.myForm.email.value;
+    atpos = emialId.indexOf("@");
+    dotpos = emialId.lastIndexOf(".");
 
-     if (atpos<1 || (dotpos-atpos<2)) {
-         alert("Please Enter Correct Email Id");
-         document.myForm.email.focus();
-         return false;
-     }
-     return true;
- }
+    if (atpos < 1 || (dotpos - atpos < 2)) {
+        alert("Please Enter Correct Email Id");
+        document.myForm.email.focus();
+        return false;
+    }
+    return true;
+}
